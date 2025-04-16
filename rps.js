@@ -32,10 +32,23 @@ function getHumanChoice() {
 console.log(getComputerChoice());
 console.log(getHumanChoice());
 
-var humanScore = 0;
-var computerScore = 0;
+let humanScores = 0;
+let computerScores = 0;
 
 function playRound(a, b) {
+
+    "Paper" > "Rock";
+    "Rock" > "Scissors";
+    "Scissors" > "Paper";
+
+    if (a > b) {
+         humanScores+1;
+         return "You win!";
+    }
+    else {
+        computerScores+1;
+        return "You lose!";
+    }
 }
 
-console.log(playRound(humanChoice, computerChoice))
+console.log(playRound(getHumanChoice, getComputerChoice))
