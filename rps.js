@@ -71,3 +71,4 @@ function myGame() {
 }
 
 myGame()
+console.log(Hello)
